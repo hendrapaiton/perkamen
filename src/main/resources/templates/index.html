@@ -1,56 +1,49 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title th:text="${appName}">Application</title>
+    <meta name="description" content="Perkamen - Sistem Informasi Surat Menyurat Digital untuk Instansi Modern. Kelola surat masuk, surat keluar, dan disposisi dengan efisien dan aman." />
+    <meta name="keywords" content="sistem surat menyurat, aplikasi disposisi, manajemen surat digital, e-office, tanda tangan digital" />
+    <title>Perkamen - Sistem Informasi Surat Menyurat Digital</title>
 
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Bootstrap Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" th:href="@{/css/style.css}" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-glass">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <i class="bi bi-code-square me-2"></i>Perkamen
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="bi bi-envelope-paper-fill me-2 fs-4"></i>
+          <span class="fw-bold">Perkamen</span>
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Fitur</a></li>
+            <li class="nav-item"><a class="nav-link" href="#workflow">Alur Kerja</a></li>
+            <li class="nav-item"><a class="nav-link" href="#technology">Teknologi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Investasi</a></li>
             <li class="nav-item ms-lg-3">
-              <a class="btn btn-primary btn-sm rounded-pill px-4" href="#"
-                >Login</a
-              >
+              <a class="btn btn-primary-gradient rounded-pill px-4 py-2" href="#contact">
+                <i class="bi bi-rocket-takeoff me-2"></i>Mulai Sekarang
+              </a>
             </li>
           </ul>
         </div>
@@ -58,24 +51,97 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h1 class="hero-title">
-              Welcome to <span th:text="${appName}">Perkamen</span>
+    <section id="home" class="hero-section">
+      <div class="hero-background"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="hero-badge mb-3">
+              <i class="bi bi-stars me-2"></i>
+              <span>Sistem Manajemen Surat Terpercaya</span>
+            </div>
+            <h1 class="hero-title mb-4">
+              Transformasi Digital <br />
+              <span class="gradient-text">Surat Menyurat</span> <br />
+              untuk Instansi Modern
             </h1>
-            <p class="hero-subtitle">
-              Experience the next generation of web applications. Simple, fast,
-              and built for professionals.
+            <p class="hero-subtitle mb-4">
+              Kelola surat masuk, surat keluar, dan disposisi dengan sistem yang aman, efisien, dan terintegrasi. 
+              Dilengkapi tanda tangan digital, QR Code verifikasi, dan notifikasi real-time.
             </p>
-            <div class="d-flex justify-content-center gap-3">
-              <a href="#" class="btn btn-light-custom btn-custom"
-                >Get Started</a
-              >
-              <a href="#" class="btn btn-outline-light btn-custom"
-                >Learn More</a
-              >
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="#features" class="btn btn-primary-gradient btn-lg rounded-pill px-5">
+                <i class="bi bi-play-circle me-2"></i>Jelajahi Fitur
+              </a>
+              <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-5">
+                <i class="bi bi-telephone me-2"></i>Hubungi Kami
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <i class="bi bi-shield-check"></i>
+                <div>
+                  <h4>100%</h4>
+                  <p>Aman & Terenkripsi</p>
+                </div>
+              </div>
+              <div class="stat-item">
+                <i class="bi bi-lightning-charge"></i>
+                <div>
+                  <h4>10x</h4>
+                  <p>Lebih Cepat</p>
+                </div>
+              </div>
+              <div class="stat-item">
+                <i class="bi bi-people"></i>
+                <div>
+                  <h4>Multi</h4>
+                  <p>User & Role</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="hero-image-wrapper">
+              <div class="floating-card card-1">
+                <i class="bi bi-envelope-check-fill"></i>
+                <div>
+                  <h6>Surat Masuk</h6>
+                  <p>Tercatat otomatis</p>
+                </div>
+              </div>
+              <div class="floating-card card-2">
+                <i class="bi bi-send-check-fill"></i>
+                <div>
+                  <h6>Surat Keluar</h6>
+                  <p>Terkirim dengan aman</p>
+                </div>
+              </div>
+              <div class="floating-card card-3">
+                <i class="bi bi-clipboard-check-fill"></i>
+                <div>
+                  <h6>Disposisi</h6>
+                  <p>Terlacak real-time</p>
+                </div>
+              </div>
+              <div class="hero-main-visual">
+                <div class="dashboard-preview">
+                  <div class="preview-header">
+                    <div class="preview-dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="preview-title">Dashboard Perkamen</div>
+                  </div>
+                  <div class="preview-content">
+                    <div class="preview-sidebar"></div>
+                    <div class="preview-main">
+                      <div class="preview-card"></div>
+                      <div class="preview-card"></div>
+                      <div class="preview-card"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -83,69 +149,603 @@
     </section>
 
     <!-- Features Section -->
-    <section class="container my-5">
-      <div class="row text-center mb-5">
-        <div class="col-12">
-          <h2 class="fw-bold">Why Choose Us?</h2>
-          <p class="text-muted">
-            We provide the best solutions for your business needs.
+    <section id="features" class="features-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-badge mb-3">
+            <i class="bi bi-stars me-2"></i>Fitur Unggulan
+          </div>
+          <h2 class="section-title mb-3">
+            Solusi Lengkap untuk <br />
+            <span class="gradient-text">Manajemen Surat Digital</span>
+          </h2>
+          <p class="section-subtitle">
+            Fitur-fitur canggih yang dirancang untuk meningkatkan efisiensi dan transparansi administrasi surat menyurat
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-inbox-fill"></i>
+              </div>
+              <h3>Manajemen Surat Masuk</h3>
+              <p>Catat, arsipkan, dan kelola surat masuk dengan sistem penomoran otomatis, klasifikasi surat, dan upload dokumen digital.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Auto-numbering agenda</li>
+                <li><i class="bi bi-check-circle-fill"></i> Upload scan surat (PDF/Image)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Pencarian & filter cepat</li>
+                <li><i class="bi bi-check-circle-fill"></i> Validasi duplikasi</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-send-fill"></i>
+              </div>
+              <h3>Manajemen Surat Keluar</h3>
+              <p>Buat, kelola, dan arsipkan surat keluar dengan template otomatis, penomoran terstruktur, dan tracking pengiriman.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Template surat otomatis</li>
+                <li><i class="bi bi-check-circle-fill"></i> Generate nomor surat</li>
+                <li><i class="bi bi-check-circle-fill"></i> Arsip digital terorganisir</li>
+                <li><i class="bi bi-check-circle-fill"></i> Export ke PDF</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-diagram-3-fill"></i>
+              </div>
+              <h3>Sistem Disposisi</h3>
+              <p>Instruksi pimpinan tersampaikan dengan jelas melalui sistem disposisi digital dengan tracking dan reminder otomatis.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Multi-level disposisi</li>
+                <li><i class="bi bi-check-circle-fill"></i> Batas waktu & prioritas</li>
+                <li><i class="bi bi-check-circle-fill"></i> Cetak lembar disposisi</li>
+                <li><i class="bi bi-check-circle-fill"></i> Timeline tracking</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card-modern featured">
+              <div class="featured-badge">
+                <i class="bi bi-star-fill me-1"></i>Premium
+              </div>
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-pen-fill"></i>
+              </div>
+              <h3>Tanda Tangan Digital</h3>
+              <p>Validasi surat dengan tanda tangan elektronik terenkripsi sesuai standar UU ITE untuk keamanan dan legalitas maksimal.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Cryptographic signature</li>
+                <li><i class="bi bi-check-circle-fill"></i> Integrasi BSrE (Pemerintah)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Visual signature</li>
+                <li><i class="bi bi-check-circle-fill"></i> Sertifikat digital</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="feature-card-modern featured">
+              <div class="featured-badge">
+                <i class="bi bi-star-fill me-1"></i>Premium
+              </div>
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-qr-code"></i>
+              </div>
+              <h3>QR Code Verifikasi</h3>
+              <p>Setiap surat dilengkapi QR Code untuk verifikasi keaslian secara instant dan mencegah pemalsuan dokumen.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Auto-generate QR Code</li>
+                <li><i class="bi bi-check-circle-fill"></i> Verifikasi online</li>
+                <li><i class="bi bi-check-circle-fill"></i> Encrypted token</li>
+                <li><i class="bi bi-check-circle-fill"></i> Anti-pemalsuan</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-bell-fill"></i>
+              </div>
+              <h3>Notifikasi Real-time</h3>
+              <p>Dapatkan pemberitahuan instant via WhatsApp dan Email untuk setiap surat masuk dan disposisi baru.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> WhatsApp Gateway</li>
+                <li><i class="bi bi-check-circle-fill"></i> Email notification</li>
+                <li><i class="bi bi-check-circle-fill"></i> Push notification</li>
+                <li><i class="bi bi-check-circle-fill"></i> Reminder otomatis</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 7 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Dashboard & Statistik</h3>
+              <p>Visualisasi data surat dengan grafik interaktif untuk monitoring dan analisis kinerja administrasi.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Grafik statistik</li>
+                <li><i class="bi bi-check-circle-fill"></i> Laporan periodik</li>
+                <li><i class="bi bi-check-circle-fill"></i> Export data</li>
+                <li><i class="bi bi-check-circle-fill"></i> Real-time analytics</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 8 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-shield-lock-fill"></i>
+              </div>
+              <h3>Keamanan Enterprise</h3>
+              <p>Sistem keamanan berlapis dengan audit trail, enkripsi data, dan role-based access control (RBAC).</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Audit trail lengkap</li>
+                <li><i class="bi bi-check-circle-fill"></i> Data encryption</li>
+                <li><i class="bi bi-check-circle-fill"></i> Multi-level access</li>
+                <li><i class="bi bi-check-circle-fill"></i> Backup otomatis</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 9 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-phone-fill"></i>
+              </div>
+              <h3>Mobile Responsive</h3>
+              <p>Akses sistem dari mana saja melalui smartphone, tablet, atau desktop dengan tampilan yang optimal.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Responsive design</li>
+                <li><i class="bi bi-check-circle-fill"></i> Mobile-first approach</li>
+                <li><i class="bi bi-check-circle-fill"></i> Cross-platform</li>
+                <li><i class="bi bi-check-circle-fill"></i> PWA ready</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="workflow-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-badge mb-3">
+            <i class="bi bi-diagram-3 me-2"></i>Alur Kerja
+          </div>
+          <h2 class="section-title mb-3">
+            Proses yang <span class="gradient-text">Efisien & Terstruktur</span>
+          </h2>
+          <p class="section-subtitle">
+            Dari penerimaan hingga disposisi, semua terkelola dengan sistematis
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="workflow-card">
+              <div class="workflow-header">
+                <i class="bi bi-inbox"></i>
+                <h3>Alur Surat Masuk</h3>
+              </div>
+              <div class="workflow-steps">
+                <div class="workflow-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h5>Penerimaan Surat</h5>
+                    <p>Surat diterima dan dicatat oleh petugas dengan scan dokumen</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h5>Pencatatan & Klasifikasi</h5>
+                    <p>Sistem memberikan nomor agenda dan klasifikasi otomatis</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h5>Notifikasi Pimpinan</h5>
+                    <p>Pimpinan menerima notifikasi surat masuk baru</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h5>Disposisi</h5>
+                    <p>Pimpinan memberikan instruksi disposisi kepada staff</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">5</div>
+                  <div class="step-content">
+                    <h5>Tindak Lanjut</h5>
+                    <p>Staff menindaklanjuti dengan tracking waktu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="workflow-card">
+              <div class="workflow-header">
+                <i class="bi bi-send"></i>
+                <h3>Alur Surat Keluar</h3>
+              </div>
+              <div class="workflow-steps">
+                <div class="workflow-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h5>Pembuatan Konsep</h5>
+                    <p>Staff membuat konsep surat menggunakan template</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h5>Review & Approval</h5>
+                    <p>Pimpinan mereview dan menyetujui konsep surat</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h5>Tanda Tangan Digital</h5>
+                    <p>Pimpinan menandatangani secara elektronik</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h5>Generate QR Code</h5>
+                    <p>Sistem otomatis menambahkan QR Code verifikasi</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">5</div>
+                  <div class="step-content">
+                    <h5>Pengiriman & Arsip</h5>
+                    <p>Surat dikirim dan tersimpan di arsip digital</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-badge mb-3">
+            <i class="bi bi-cpu me-2"></i>Teknologi
+          </div>
+          <h2 class="section-title mb-3">
+            Dibangun dengan <span class="gradient-text">Teknologi Modern</span>
+          </h2>
+          <p class="section-subtitle">
+            Stack teknologi enterprise-grade untuk performa, keamanan, dan skalabilitas optimal
+          </p>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="tech-card">
+              <div class="tech-icon">
+                <i class="bi bi-cup-hot-fill"></i>
+              </div>
+              <h4>Java Spring Boot</h4>
+              <p>Framework backend yang robust dan scalable</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="tech-card">
+              <div class="tech-icon">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <h4>PostgreSQL</h4>
+              <p>Database relasional yang powerful dan reliable</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="tech-card">
+              <div class="tech-icon">
+                <i class="bi bi-file-earmark-code-fill"></i>
+              </div>
+              <h4>Thymeleaf</h4>
+              <p>Template engine modern untuk UI dinamis</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="tech-card">
+              <div class="tech-icon">
+                <i class="bi bi-bootstrap-fill"></i>
+              </div>
+              <h4>Bootstrap 5</h4>
+              <p>Framework CSS untuk UI responsif</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="tech-feature-card">
+              <h3><i class="bi bi-gear-fill me-2"></i>Arsitektur Modern</h3>
+              <ul class="tech-list">
+                <li><i class="bi bi-check2-circle"></i> MVC Pattern (Model-View-Controller)</li>
+                <li><i class="bi bi-check2-circle"></i> RESTful API Architecture</li>
+                <li><i class="bi bi-check2-circle"></i> Layered Architecture (Controller-Service-Repository)</li>
+                <li><i class="bi bi-check2-circle"></i> Dependency Injection</li>
+                <li><i class="bi bi-check2-circle"></i> Docker Containerization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="tech-feature-card">
+              <h3><i class="bi bi-shield-check me-2"></i>Keamanan & Kualitas</h3>
+              <ul class="tech-list">
+                <li><i class="bi bi-check2-circle"></i> Spring Security Integration</li>
+                <li><i class="bi bi-check2-circle"></i> BCrypt Password Hashing</li>
+                <li><i class="bi bi-check2-circle"></i> CSRF Protection</li>
+                <li><i class="bi bi-check2-circle"></i> SQL Injection Prevention</li>
+                <li><i class="bi bi-check2-circle"></i> Unit & Integration Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-badge mb-3">
+            <i class="bi bi-tag me-2"></i>Investasi
+          </div>
+          <h2 class="section-title mb-3">
+            Paket yang <span class="gradient-text">Fleksibel</span> untuk Kebutuhan Anda
+          </h2>
+          <p class="section-subtitle">
+            Pilih paket yang sesuai dengan skala dan kebutuhan instansi Anda
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3>Starter</h3>
+                <p>Untuk instansi kecil</p>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">Rp</span>
+                <span class="amount">15 Juta</span>
+                <span class="period">/ one-time</span>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Manajemen Surat Masuk & Keluar</li>
+                <li><i class="bi bi-check-circle-fill"></i> Sistem Disposisi</li>
+                <li><i class="bi bi-check-circle-fill"></i> Dashboard & Laporan</li>
+                <li><i class="bi bi-check-circle-fill"></i> Max 25 User</li>
+                <li><i class="bi bi-check-circle-fill"></i> Storage 10 GB</li>
+                <li><i class="bi bi-check-circle-fill"></i> Support 3 Bulan</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> Tanda Tangan Digital</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> QR Code Verifikasi</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> Notifikasi WhatsApp</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-primary w-100 rounded-pill">Pilih Paket</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card featured">
+              <div class="popular-badge">
+                <i class="bi bi-star-fill me-1"></i>Paling Populer
+              </div>
+              <div class="pricing-header">
+                <h3>Professional</h3>
+                <p>Untuk instansi menengah</p>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">Rp</span>
+                <span class="amount">35 Juta</span>
+                <span class="period">/ one-time</span>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Semua fitur Starter</li>
+                <li><i class="bi bi-check-circle-fill"></i> Tanda Tangan Digital</li>
+                <li><i class="bi bi-check-circle-fill"></i> QR Code Verifikasi</li>
+                <li><i class="bi bi-check-circle-fill"></i> Notifikasi Email</li>
+                <li><i class="bi bi-check-circle-fill"></i> Max 100 User</li>
+                <li><i class="bi bi-check-circle-fill"></i> Storage 50 GB</li>
+                <li><i class="bi bi-check-circle-fill"></i> Support 6 Bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i> Training User</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> Notifikasi WhatsApp</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary-gradient w-100 rounded-pill">Pilih Paket</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <h3>Enterprise</h3>
+                <p>Untuk instansi besar</p>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">Rp</span>
+                <span class="amount">75 Juta</span>
+                <span class="period">/ one-time</span>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Semua fitur Professional</li>
+                <li><i class="bi bi-check-circle-fill"></i> Notifikasi WhatsApp Gateway</li>
+                <li><i class="bi bi-check-circle-fill"></i> Integrasi BSrE (Pemerintah)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Multi-Tenancy Support</li>
+                <li><i class="bi bi-check-circle-fill"></i> Unlimited User</li>
+                <li><i class="bi bi-check-circle-fill"></i> Storage 200 GB</li>
+                <li><i class="bi bi-check-circle-fill"></i> Support 12 Bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i> Customization</li>
+                <li><i class="bi bi-check-circle-fill"></i> Dedicated Support</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-primary w-100 rounded-pill">Hubungi Sales</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up">
+          <p class="text-muted mb-3">
+            <i class="bi bi-info-circle me-2"></i>
+            Harga sudah termasuk instalasi, konfigurasi, dan training. Maintenance & support tambahan tersedia dengan biaya terpisah.
           </p>
         </div>
       </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="feature-card text-center">
-            <div class="feature-icon">
-              <i class="bi bi-speedometer2"></i>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section py-5">
+      <div class="container">
+        <div class="cta-card" data-aos="zoom-in">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h2 class="cta-title mb-3">
+                Siap Transformasi Digital Administrasi Surat Anda?
+              </h2>
+              <p class="cta-subtitle mb-4">
+                Bergabunglah dengan puluhan instansi yang telah merasakan efisiensi dan transparansi dengan Perkamen. 
+                Hubungi kami untuk demo gratis dan konsultasi kebutuhan sistem Anda.
+              </p>
+              <div class="cta-contact">
+                <div class="contact-item">
+                  <i class="bi bi-envelope-fill"></i>
+                  <div>
+                    <small>Email</small>
+                    <p>info@perkamen.id</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-whatsapp"></i>
+                  <div>
+                    <small>WhatsApp</small>
+                    <p>+62 812-3456-7890</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone-fill"></i>
+                  <div>
+                    <small>Telepon</small>
+                    <p>(021) 1234-5678</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 class="feature-title">Lightning Fast</h3>
-            <p class="text-muted">
-              Optimized for speed and performance to ensure the best user
-              experience.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card text-center">
-            <div class="feature-icon">
-              <i class="bi bi-shield-lock"></i>
+            <div class="col-lg-4 text-lg-end">
+              <a href="mailto:info@perkamen.id" class="btn btn-light btn-lg rounded-pill px-5 mb-3 w-100 w-lg-auto">
+                <i class="bi bi-envelope me-2"></i>Kirim Email
+              </a>
+              <a href="https://wa.me/6281234567890" class="btn btn-success btn-lg rounded-pill px-5 w-100 w-lg-auto">
+                <i class="bi bi-whatsapp me-2"></i>Chat WhatsApp
+              </a>
             </div>
-            <h3 class="feature-title">Secure by Design</h3>
-            <p class="text-muted">
-              Built with top-tier security standards to keep your data safe and
-              sound.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card text-center">
-            <div class="feature-icon">
-              <i class="bi bi-cloud-arrow-up"></i>
-            </div>
-            <h3 class="feature-title">Cloud Ready</h3>
-            <p class="text-muted">
-              Seamlessly integrate with cloud services for scalability and
-              reliability.
-            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="mb-2">
-              &copy; 2024 Perkamen System. All rights reserved.
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-brand mb-3">
+              <i class="bi bi-envelope-paper-fill me-2"></i>
+              <span class="fw-bold">Perkamen</span>
+            </div>
+            <p class="footer-description">
+              Sistem Informasi Surat Menyurat Digital yang aman, efisien, dan modern untuk instansi pemerintah dan swasta.
             </p>
-            <div class="social-links">
-              <a href="#"><i class="bi bi-twitter"></i></a>
+            <div class="social-links mt-4">
               <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
               <a href="#"><i class="bi bi-instagram"></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
             </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Produk</h5>
+            <ul class="footer-links">
+              <li><a href="#features">Fitur</a></li>
+              <li><a href="#workflow">Alur Kerja</a></li>
+              <li><a href="#technology">Teknologi</a></li>
+              <li><a href="#pricing">Harga</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Perusahaan</h5>
+            <ul class="footer-links">
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Tim</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Dukungan</h5>
+            <ul class="footer-links">
+              <li><a href="#">Dokumentasi</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Legal</h5>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">SLA</a></li>
+              <li><a href="#">License</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="row">
+          <div class="col-md-6">
+            <p class="footer-copyright mb-0">
+              &copy; 2025 Perkamen System. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="footer-made mb-0">
+              Made with <i class="bi bi-heart-fill text-danger"></i> in Indonesia
+            </p>
           </div>
         </div>
       </div>
@@ -153,5 +753,43 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+      });
+
+      // Navbar scroll effect
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
