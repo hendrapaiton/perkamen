@@ -1,2 +1,6 @@
-github: [hendrapaiton]
-custom: ['https://www.paypal.com/paypalme/hendrapaiton', 'https://saweria.co/hendrapaiton']
+github:
+  - hendrapaiton
+
+custom:
+  - https://www.paypal.com/paypalme/hendrapaiton
+  - https://saweria.co/hendrapaiton
