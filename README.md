@@ -1,6 +1,6 @@
-# 📜 Perkamen: Sistem Informasi Surat Menyurat Sekolah
-
 [![CI](https://github.com/hendrapaiton/perkamen/actions/workflows/ci.yml/badge.svg)](https://github.com/hendrapaiton/perkamen/actions/workflows/ci.yml)
+
+# 📜 Perkamen: Sistem Informasi Surat Menyurat Sekolah
 
 > **Modernisasi Tata Usaha Sekolah Menuju Era Digital yang Tertib, Efisien, dan Transparan.**
 
