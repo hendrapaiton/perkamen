@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="id">
+  <body>
+    <!-- Workflow Section Fragment -->
+    <section th:fragment="workflow" id="workflow" class="workflow-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-badge mb-3">
+            <i class="bi bi-diagram-3 me-2"></i>Alur Kerja
+          </div>
+          <h2 class="section-title mb-3">
+            Proses yang <span class="gradient-text">Efisien & Terstruktur</span>
+          </h2>
+          <p class="section-subtitle">
+            Dari penerimaan hingga disposisi, semua terkelola dengan sistematis
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="workflow-card">
+              <div class="workflow-header">
+                <i class="bi bi-inbox"></i>
+                <h3>Alur Surat Masuk</h3>
+              </div>
+              <div class="workflow-steps">
+                <div class="workflow-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h5>Penerimaan Surat</h5>
+                    <p>Surat diterima dan dicatat oleh petugas dengan scan dokumen</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h5>Pencatatan & Klasifikasi</h5>
+                    <p>Sistem memberikan nomor agenda dan klasifikasi otomatis</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h5>Notifikasi Pimpinan</h5>
+                    <p>Pimpinan menerima notifikasi surat masuk baru</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h5>Disposisi</h5>
+                    <p>Pimpinan memberikan instruksi disposisi kepada staff</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">5</div>
+                  <div class="step-content">
+                    <h5>Tindak Lanjut</h5>
+                    <p>Staff menindaklanjuti dengan tracking waktu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="workflow-card">
+              <div class="workflow-header">
+                <i class="bi bi-send"></i>
+                <h3>Alur Surat Keluar</h3>
+              </div>
+              <div class="workflow-steps">
+                <div class="workflow-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h5>Pembuatan Konsep</h5>
+                    <p>Staff membuat konsep surat menggunakan template</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h5>Review & Approval</h5>
+                    <p>Pimpinan mereview dan menyetujui konsep surat</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h5>Tanda Tangan Digital</h5>
+                    <p>Pimpinan menandatangani secara elektronik</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h5>Generate QR Code</h5>
+                    <p>Sistem otomatis menambahkan QR Code verifikasi</p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number">5</div>
+                  <div class="step-content">
+                    <h5>Pengiriman & Arsip</h5>
+                    <p>Surat dikirim dan tersimpan di arsip digital</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

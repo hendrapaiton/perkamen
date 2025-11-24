@@ -21,8 +21,17 @@ public class LandingControllerTest {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("index"))
-                .andExpect(model().attribute("appName", "Perkamen System"))
-                .andExpect(content().string(containsString("Perkamen System")))
-                .andExpect(content().string(containsString("Welcome to")));
+                .andExpect(model().attribute("pageTitle", "Beranda"))
+                // Verify Title from head fragment
+                .andExpect(content().string(containsString("<title>Beranda - Perkamen</title>")))
+                // Verify Navbar fragment content
+                .andExpect(content().string(containsString("Perkamen")))
+                .andExpect(content().string(containsString("Mulai Sekarang")))
+                // Verify Hero section content
+                .andExpect(content().string(containsString("Transformasi Digital")))
+                // Verify Features section content
+                .andExpect(content().string(containsString("Fitur Unggulan")))
+                // Verify Footer fragment content
+                .andExpect(content().string(containsString("Sistem Informasi Surat Menyurat Digital")));
     }
 }

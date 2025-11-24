@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="id">
+  <body>
+    <!-- Features Section Fragment -->
+    <section th:fragment="features" id="features" class="features-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-badge mb-3">
+            <i class="bi bi-stars me-2"></i>Fitur Unggulan
+          </div>
+          <h2 class="section-title mb-3">
+            Solusi Lengkap untuk <br />
+            <span class="gradient-text">Manajemen Surat Digital</span>
+          </h2>
+          <p class="section-subtitle">
+            Fitur-fitur canggih yang dirancang untuk meningkatkan efisiensi dan transparansi administrasi surat menyurat
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-inbox-fill"></i>
+              </div>
+              <h3>Manajemen Surat Masuk</h3>
+              <p>Catat, arsipkan, dan kelola surat masuk dengan sistem penomoran otomatis, klasifikasi surat, dan upload dokumen digital.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Auto-numbering agenda</li>
+                <li><i class="bi bi-check-circle-fill"></i> Upload scan surat (PDF/Image)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Pencarian & filter cepat</li>
+                <li><i class="bi bi-check-circle-fill"></i> Validasi duplikasi</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-send-fill"></i>
+              </div>
+              <h3>Manajemen Surat Keluar</h3>
+              <p>Buat, kelola, dan arsipkan surat keluar dengan template otomatis, penomoran terstruktur, dan tracking pengiriman.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Template surat otomatis</li>
+                <li><i class="bi bi-check-circle-fill"></i> Generate nomor surat</li>
+                <li><i class="bi bi-check-circle-fill"></i> Arsip digital terorganisir</li>
+                <li><i class="bi bi-check-circle-fill"></i> Export ke PDF</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-diagram-3-fill"></i>
+              </div>
+              <h3>Sistem Disposisi</h3>
+              <p>Instruksi pimpinan tersampaikan dengan jelas melalui sistem disposisi digital dengan tracking dan reminder otomatis.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Multi-level disposisi</li>
+                <li><i class="bi bi-check-circle-fill"></i> Batas waktu & prioritas</li>
+                <li><i class="bi bi-check-circle-fill"></i> Cetak lembar disposisi</li>
+                <li><i class="bi bi-check-circle-fill"></i> Timeline tracking</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card-modern featured">
+              <div class="featured-badge">
+                <i class="bi bi-star-fill me-1"></i>Premium
+              </div>
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-pen-fill"></i>
+              </div>
+              <h3>Tanda Tangan Digital</h3>
+              <p>Validasi surat dengan tanda tangan elektronik terenkripsi sesuai standar UU ITE untuk keamanan dan legalitas maksimal.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Cryptographic signature</li>
+                <li><i class="bi bi-check-circle-fill"></i> Integrasi BSrE (Pemerintah)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Visual signature</li>
+                <li><i class="bi bi-check-circle-fill"></i> Sertifikat digital</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="feature-card-modern featured">
+              <div class="featured-badge">
+                <i class="bi bi-star-fill me-1"></i>Premium
+              </div>
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-qr-code"></i>
+              </div>
+              <h3>QR Code Verifikasi</h3>
+              <p>Setiap surat dilengkapi QR Code untuk verifikasi keaslian secara instant dan mencegah pemalsuan dokumen.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Auto-generate QR Code</li>
+                <li><i class="bi bi-check-circle-fill"></i> Verifikasi online</li>
+                <li><i class="bi bi-check-circle-fill"></i> Encrypted token</li>
+                <li><i class="bi bi-check-circle-fill"></i> Anti-pemalsuan</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-bell-fill"></i>
+              </div>
+              <h3>Notifikasi Real-time</h3>
+              <p>Dapatkan pemberitahuan instant via WhatsApp dan Email untuk setiap surat masuk dan disposisi baru.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> WhatsApp Gateway</li>
+                <li><i class="bi bi-check-circle-fill"></i> Email notification</li>
+                <li><i class="bi bi-check-circle-fill"></i> Push notification</li>
+                <li><i class="bi bi-check-circle-fill"></i> Reminder otomatis</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 7 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Dashboard & Statistik</h3>
+              <p>Visualisasi data surat dengan grafik interaktif untuk monitoring dan analisis kinerja administrasi.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Grafik statistik</li>
+                <li><i class="bi bi-check-circle-fill"></i> Laporan periodik</li>
+                <li><i class="bi bi-check-circle-fill"></i> Export data</li>
+                <li><i class="bi bi-check-circle-fill"></i> Real-time analytics</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 8 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-shield-lock-fill"></i>
+              </div>
+              <h3>Keamanan Enterprise</h3>
+              <p>Sistem keamanan berlapis dengan audit trail, enkripsi data, dan role-based access control (RBAC).</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Audit trail lengkap</li>
+                <li><i class="bi bi-check-circle-fill"></i> Data encryption</li>
+                <li><i class="bi bi-check-circle-fill"></i> Multi-level access</li>
+                <li><i class="bi bi-check-circle-fill"></i> Backup otomatis</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 9 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="feature-card-modern">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-phone-fill"></i>
+              </div>
+              <h3>Mobile Responsive</h3>
+              <p>Akses sistem dari mana saja melalui smartphone, tablet, atau desktop dengan tampilan yang optimal.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Responsive design</li>
+                <li><i class="bi bi-check-circle-fill"></i> Mobile-first approach</li>
+                <li><i class="bi bi-check-circle-fill"></i> Cross-platform</li>
+                <li><i class="bi bi-check-circle-fill"></i> PWA ready</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

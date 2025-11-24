@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="id">
+  <body>
+    <!-- Footer Fragment -->
+    <footer th:fragment="footer" class="footer py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-brand mb-3">
+              <i class="bi bi-envelope-paper-fill me-2"></i>
+              <span class="fw-bold">Perkamen</span>
+            </div>
+            <p class="footer-description">
+              Sistem Informasi Surat Menyurat Digital yang aman, efisien, dan modern untuk instansi pemerintah dan swasta.
+            </p>
+            <div class="social-links mt-4">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Produk</h5>
+            <ul class="footer-links">
+              <li><a href="#features">Fitur</a></li>
+              <li><a href="#workflow">Alur Kerja</a></li>
+              <li><a href="#technology">Teknologi</a></li>
+              <li><a href="#pricing">Harga</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Perusahaan</h5>
+            <ul class="footer-links">
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Tim</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Dukungan</h5>
+            <ul class="footer-links">
+              <li><a href="#">Dokumentasi</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="footer-title">Legal</h5>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">SLA</a></li>
+              <li><a href="#">License</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="row">
+          <div class="col-md-6">
+            <p class="footer-copyright mb-0">
+              &copy; <span th:text="${#dates.year(#dates.createNow())}">2025</span> Perkamen System. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="footer-made mb-0">
+              Made with <i class="bi bi-heart-fill text-danger"></i> in Indonesia
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

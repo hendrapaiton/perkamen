@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="id">
+  <body>
+    <!-- Technology Section Fragment -->
+    <section th:fragment="technology" id="technology" class="technology-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-badge mb-3">
+            <i class="bi bi-cpu me-2"></i>Teknologi
+          </div>
+          <h2 class="section-title mb-3">
+            Dibangun dengan <span class="gradient-text">Teknologi Modern</span>
+          </h2>
+          <p class="section-subtitle">
+            Stack teknologi enterprise-grade untuk performa, keamanan, dan skalabilitas optimal
+          </p>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="tech-card">
+              <div class="tech-icon">
+                <i class="bi bi-cup-hot-fill"></i>
+              </div>
+              <h4>Java Spring Boot</h4>
+              <p>Framework backend yang robust dan scalable</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="tech-card">
+              <div class="tech-icon">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <h4>PostgreSQL</h4>
+              <p>Database relasional yang powerful dan reliable</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="tech-card">
+              <div class="tech-icon">
+                <i class="bi bi-file-earmark-code-fill"></i>
+              </div>
+              <h4>Thymeleaf</h4>
+              <p>Template engine modern untuk UI dinamis</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="tech-card">
+              <div class="tech-icon">
+                <i class="bi bi-bootstrap-fill"></i>
+              </div>
+              <h4>Bootstrap 5</h4>
+              <p>Framework CSS untuk UI responsif</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="tech-feature-card">
+              <h3><i class="bi bi-gear-fill me-2"></i>Arsitektur Modern</h3>
+              <ul class="tech-list">
+                <li><i class="bi bi-check2-circle"></i> MVC Pattern (Model-View-Controller)</li>
+                <li><i class="bi bi-check2-circle"></i> RESTful API Architecture</li>
+                <li><i class="bi bi-check2-circle"></i> Layered Architecture (Controller-Service-Repository)</li>
+                <li><i class="bi bi-check2-circle"></i> Dependency Injection</li>
+                <li><i class="bi bi-check2-circle"></i> Docker Containerization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="tech-feature-card">
+              <h3><i class="bi bi-shield-check me-2"></i>Keamanan & Kualitas</h3>
+              <ul class="tech-list">
+                <li><i class="bi bi-check2-circle"></i> Spring Security Integration</li>
+                <li><i class="bi bi-check2-circle"></i> BCrypt Password Hashing</li>
+                <li><i class="bi bi-check2-circle"></i> CSRF Protection</li>
+                <li><i class="bi bi-check2-circle"></i> SQL Injection Prevention</li>
+                <li><i class="bi bi-check2-circle"></i> Unit & Integration Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

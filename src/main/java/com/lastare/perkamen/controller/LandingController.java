@@ -9,7 +9,7 @@ public class LandingController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("appName", "Perkamen System");
+        model.addAttribute("pageTitle", "Beranda");
         return "index";
     }
 }

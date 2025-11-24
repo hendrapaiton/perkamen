@@ -55,6 +55,20 @@ Dukungan Anda akan dialokasikan untuk:
 
 ---
 
+## 📚 Dokumentasi Template
+
+Proyek ini menggunakan struktur template Thymeleaf yang modular dan profesional. Untuk informasi lengkap tentang struktur template, cara penggunaan, dan best practices, silakan baca:
+
+**📖 [DOCUMENTATION.md](DOCUMENTATION.md)** - Dokumentasi lengkap modularisasi template Thymeleaf
+
+### Quick Links:
+
+- [Template Structure](docs/TEMPLATE_STRUCTURE.md) - Penjelasan struktur dan best practices
+- [Template Diagram](docs/TEMPLATE_DIAGRAM.md) - Diagram visual dan flow rendering
+- [Quick Reference](docs/QUICK_REFERENCE.md) - Quick reference untuk penggunaan cepat
+
+---
+
 ### 📞 Kontak Kami
 
 Untuk diskusi lebih lanjut mengenai demo produk, roadmap pengembangan, atau paket sponsorship, silakan hubungi tim pengembang kami.
